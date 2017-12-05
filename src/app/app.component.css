@@ -1,0 +1,35 @@
+.button-flat-empty {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #707070;
+    transition-duration: 0.2s;
+    background: none;
+    border: 2px solid #707070;
+  }
+  .button-flat-empty:hover {
+    background: #707070;
+    color: white;
+  }
+  .text {
+    color: #707070;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 68px;
+    letter-spacing: 1px;
+    
+  }
+  
+  .center {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 20%;
+    width: 90%;  
+  }
