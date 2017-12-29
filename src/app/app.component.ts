@@ -8,8 +8,9 @@ import { IQuote } from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  quote: string = '<p>Give a crap. Don\u2019t give a fuck.<\/p>';
+  quote: string = '<p>Some random quote.<\/p>';
   quotearr: IQuote;
+
   constructor(private _quoteService: QuoteService) {
 
   }
@@ -19,7 +20,17 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._quoteService.getRandomQuote().subscribe(response => this.quotearr = response);
-    
+    this._quoteService.getRandomQuote().subscribe(response => {
+      // console.log(response);
+      this.quote = response[0].content;
+    });
+    // console.log(this.quotearr);
+  }
+
+  getNewQuote(): void { 
+    this._quoteService.getRandomQuote().subscribe(response => {
+      // console.log(response);
+      this.quote = response[0].content;
+    });
   }
 }
