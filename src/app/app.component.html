@@ -5,7 +5,7 @@
     <i class="fa fa-quote-right" style="font-size: 45px;vertical-align:top;margin-left:5px;"></i>
   </span>
   <div style="margin-top:30px;">
-    <a class="button-flat-empty" style="padding: 8px 14px;float: left; margin-left: 95px;" href="https://twitter.com/intent/tweet?{{quote.content | removeHtmlTags}}    "><i class="fa fa-twitter"></i></a>
+    <a class="button-flat-empty" style="padding: 8px 14px;float: left; margin-left: 95px;" href="https://twitter.com/intent/tweet?text={{quote.content | removeHtmlTags}}    "><i class="fa fa-twitter"></i></a>
     <a class="author-text">- {{quote?.title}}</a>
     <a class="button-flat-empty" style="font-size:24px;float:right;font-weight:bold;margin-right: 100px; cursor: pointer;" (click)="newQuote()">NEW QUOTE</a>
   </div>
