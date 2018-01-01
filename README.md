@@ -1,6 +1,6 @@
 # QuoteGenerator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.3. This project was made for me to get used to using angular & working with github projects. It uses quotesondesign API V4.0 to generate random design quotes.
 
 ## Development server
 
