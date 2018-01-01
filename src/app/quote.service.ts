@@ -10,7 +10,17 @@ export class QuoteService {
   constructor(private _http: Http) { }
 
   getRandomQuote(): Observable<IQuote> {
-    return this._http.get(this._quoteUrl).map(response => <IQuote>response.json())
+    return this._http.get(this._quoteUrl + this.makeid()).map(response => <IQuote>response.json())
+  }
+
+  makeid(): string {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+    for (var i = 0; i < 5; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+    // console.log(text);
+    return this._quoteUrl + text;
   }
 
 }

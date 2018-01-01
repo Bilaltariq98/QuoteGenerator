@@ -23,7 +23,16 @@
     font-weight: 300;
     font-size: 3vw;
     letter-spacing: 1px;
-    
+  }
+
+  .author-text {
+    color: #575757;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 115px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 2.8vw;
+    line-height: 63px;
   }
   
   .center {
