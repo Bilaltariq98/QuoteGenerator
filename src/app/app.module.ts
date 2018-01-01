@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { RemoveHtmlTagsPipe } from './remove-html-tags.pipe';
@@ -14,7 +15,8 @@ import { QuoteService } from './quote.service';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    HttpClientModule
   ],
   providers: [QuoteService],
   bootstrap: [AppComponent]
