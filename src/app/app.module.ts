@@ -18,7 +18,7 @@ import { QuoteService } from './quote.service';
     HttpModule,
     HttpClientModule
   ],
-  providers: [QuoteService],
+  providers: [QuoteService, RemoveHtmlTagsPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
